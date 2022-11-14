@@ -7,3 +7,8 @@ def mane_function(x, y):
         a = a * 2
     return a
 print(mane_function(100, 200))
+
+def test_function(*args):
+    for i in args:
+        return i + sum(args)
+print(test_function(1, 2, 3, 4))
