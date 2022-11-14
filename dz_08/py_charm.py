@@ -6,4 +6,5 @@ def mane_function(x, y):
         a += 1
         a = a * 2
     return a
-print(mane_function(100, 101))
+print(mane_function(100, 115))
+
