@@ -11,4 +11,4 @@ print(mane_function(100, 200))
 def test_function(*args):
     for i in args:
         return i + sum(args)
-print(test_function(1, 2, 3, 4))
+print(test_function(1, 2, 3, 40))
