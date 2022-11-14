@@ -4,6 +4,6 @@ def mane_function(x, y):
     a = 0
     while a < x and x <= y:
         a += 1
-        a = a * 3
+        a = a * 2
     return a
-print(mane_function(100, 600))
+print(mane_function(100, 200))
