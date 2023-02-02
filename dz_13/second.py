@@ -22,22 +22,14 @@ def selection(data):
         if minIndex != i:
             data[i], data[minIndex] = data[minIndex], data[i]
 
-
-avg_str = []
-for i in range(10):
-    start = time.time()
-    selection(str_list)
-    end = time.time() - start
-    avg_str.append(end)
-print(sum(avg_str) / len(avg_str))
-
-avg_int = []
-for i in range(10):
-    start = time.time()
-    selection(int_list)
-    end = time.time() - start
-    avg_int.append(end)
-
-print(sum(avg_int) / len(avg_int))
-
-
+def average(data):
+    avg = []
+    for i in range(10):
+        start = time.time()
+        selection(data)
+        end = time.time() - start
+        avg.append(end)
+    print("Average is: ", sum(avg) / len(avg))
+average(int_list)
+average(str_list)
+average(float_list)
